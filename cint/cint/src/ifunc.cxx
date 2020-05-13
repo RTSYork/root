@@ -5471,6 +5471,11 @@ int G__interpret_func(G__value* result7, const char* funcname, G__param* libp, i
    store_inherit_tagnum = G__tagnum;
 #endif
    store_asm_noverflow = G__asm_noverflow;
+
+   if (strcmp(funcname, "main") == 0)
+      fprintf(stderr, "****\n");
+   fprintf(stderr, "Interpreting function: %s\n", funcname);
+
    //
    // Skip the search for the function if we are
    // called by running bytecode, the search was

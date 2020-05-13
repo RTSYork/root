@@ -1030,6 +1030,8 @@ G__value G__getexpr(const char* expression)
    int store_no_exec_compile_or[G__STACKDEPTH];
    G__value vtmp_and, vtmp_or;
 
+   fprintf(stderr, "Evaluating expression: %s\n", expression);
+
    //
    // Return null for no expression.
    //

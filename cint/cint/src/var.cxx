@@ -3224,6 +3224,9 @@ static G__value G__allocvariable(G__value result, G__value para[], G__var_array*
       G__genericerror(0);
       return result;
    }
+
+   fprintf(stderr, "Allocating memory for variable: %s\n", varname);
+
    //
    //  Complain if the variable name has a minus or plus in it.
    //
