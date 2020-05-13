@@ -140,6 +140,7 @@ foreach(_name ${CINTSTLDLLNAMES})
                                -I${CMAKE_SOURCE_DIR}/core/base/inc
                                -I${CMAKE_SOURCE_DIR}/core/meta/inc 
                                -I${CMAKE_SOURCE_DIR}/core/clib/inc 
+                               -I${CMAKE_OSX_SYSROOT}/usr/include 
                                ${_name1} ${linkdeffile} 
                        DEPENDS ${linkdeffile} ${ROOTCINTDEP})
 

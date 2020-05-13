@@ -112,6 +112,7 @@ set(INCLUDE_DIRECTORIES
     ${CMAKE_SOURCE_DIR}/graf3d/g3d/inc
     ${CMAKE_SOURCE_DIR}/net/net/inc
     ${CMAKE_SOURCE_DIR}/core/base/src 
+    ${CMAKE_OSX_SYSROOT}/usr/include 
     ${ROOT_INCLUDE_DIR} ) 
 
 ROOT_GENERATE_ROOTMAP(Core LINKDEF ${LibCore_LINKDEF})

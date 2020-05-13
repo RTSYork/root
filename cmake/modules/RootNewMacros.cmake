@@ -216,7 +216,8 @@ function(ROOT_GENERATE_DICTIONARY dictionary)
                     -I${CMAKE_BINARY_DIR}/include
                     -I${CMAKE_SOURCE_DIR}/cint/cint/include 
                     -I${CMAKE_SOURCE_DIR}/cint/cint/stl 
-                    -I${CMAKE_SOURCE_DIR}/cint/cint/lib)
+                    -I${CMAKE_SOURCE_DIR}/cint/cint/lib
+                    -I${CMAKE_OSX_SYSROOT}/usr/include)
   else()
     set(includedirs -I${CMAKE_CURRENT_SOURCE_DIR}/inc) 
   endif() 
